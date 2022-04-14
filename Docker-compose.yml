@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  python-template:
+    container_name: python-template
+    build: .
+    volumes:
+        - .:/app/
+    #shm_size: '16gb'
+    #ports:
+    #  - 8888:8888
+    #deploy:
+    #  resources:
+    #    reservations:
+    #      devices:
+    #        - driver: nvidia
+    #          count: 1
+    #          capabilities: [gpu]
+    #command: bash -c "python3 ./main.py"
+    #command: bash -c "jupyter-lab --ip 0.0.0.0 --no-browser --allow-root"
