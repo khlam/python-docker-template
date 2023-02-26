@@ -1,8 +1,4 @@
-# debian nvidia-cuda
-#FROM ghcr.io/khlam/docker-pytorch/pyt:latest as base
-
-# alpine linux python3.8
-FROM ghcr.io/khlam/py/py:3.8 as base
+FROM 3.11.2-slim-buster as base
 
 ARG DEBIAN_FRONTEND=noninteractive
 
