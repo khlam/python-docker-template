@@ -3,7 +3,13 @@ version: "3.7"
 services:
   python-template:
     container_name: python-template
-    build: .
+    build:
+      context: .
+    environment:
+      - A=${A}
+      - B=${B}
+      - C=${C}
+      - D=${D}
     volumes:
         - .:/app/
     #shm_size: '16gb'
