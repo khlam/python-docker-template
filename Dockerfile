@@ -1,3 +1,6 @@
+# docker build -f Dockerfile -t <REGISTRY_ADDRESS_INCLUDING_PORT>/<CONTAINER_NAME>:<CONTAINER_TAG | latest> --no-cache .
+# docker image push <REGISTRY_ADDRESS_INCLUDING_PORT>/<CONTAINER_NAME>:<CONTAINER_TAG | latest>
+
 FROM python:3.11.2-slim-buster as base
 
 ARG DEBIAN_FRONTEND=noninteractive
